@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF860BBB272FD39D000BE5E1 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF860BBA272FD39D000BE5E1 /* UITextView+Extensions.swift */; };
 		CFBBEC10272C2E4F000146E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBEC0F272C2E4F000146E9 /* AppDelegate.swift */; };
 		CFBBEC12272C2E4F000146E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBEC11272C2E4F000146E9 /* SceneDelegate.swift */; };
 		CFBBEC14272C2E4F000146E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBEC13272C2E4F000146E9 /* ViewController.swift */; };
 		CFBBEC17272C2E4F000146E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBBEC15272C2E4F000146E9 /* Main.storyboard */; };
 		CFBBEC19272C2E50000146E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBBEC18272C2E50000146E9 /* Assets.xcassets */; };
 		CFBBEC1C272C2E50000146E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBBEC1A272C2E50000146E9 /* LaunchScreen.storyboard */; };
-		CFBBEC24272C30CD000146E9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBEC23272C30CD000146E9 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF860BBA272FD39D000BE5E1 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
 		CFBBEC0C272C2E4F000146E9 /* textRecognitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textRecognitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBBEC0F272C2E4F000146E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBBEC11272C2E4F000146E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		CFBBEC18272C2E50000146E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFBBEC1B272C2E50000146E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFBBEC1D272C2E50000146E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFBBEC23272C30CD000146E9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				CFBBEC0F272C2E4F000146E9 /* AppDelegate.swift */,
 				CFBBEC11272C2E4F000146E9 /* SceneDelegate.swift */,
 				CFBBEC13272C2E4F000146E9 /* ViewController.swift */,
-				CFBBEC23272C30CD000146E9 /* CameraViewController.swift */,
+				CF860BBA272FD39D000BE5E1 /* UITextView+Extensions.swift */,
 				CFBBEC15272C2E4F000146E9 /* Main.storyboard */,
 				CFBBEC18272C2E50000146E9 /* Assets.xcassets */,
 				CFBBEC1A272C2E50000146E9 /* LaunchScreen.storyboard */,
@@ -142,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBBEC14272C2E4F000146E9 /* ViewController.swift in Sources */,
-				CFBBEC24272C30CD000146E9 /* CameraViewController.swift in Sources */,
 				CFBBEC10272C2E4F000146E9 /* AppDelegate.swift in Sources */,
 				CFBBEC12272C2E4F000146E9 /* SceneDelegate.swift in Sources */,
+				CF860BBB272FD39D000BE5E1 /* UITextView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

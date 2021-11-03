@@ -15,11 +15,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     }
-
-    @IBAction func ScanButtonTapped(_ sender: Any) {
-        let cameraViewController = CameraViewController()
         
+        textView
+            .adjustableForKeyboard()
+            .withDoneButton()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    @IBAction func ScanButtonTapped(_ sender: Any) {
+        guard VNDocumentCameraViewController.isSupported else {
+            textView.text = "Document scanning is not supported by this device"
+            NSLog("Document scanning is not supported by this device")
+            return
+        }
+        
+        let cameraViewController = VNDocumentCameraViewController()
         cameraViewController.delegate = self
         
         present(cameraViewController, animated: true)
@@ -30,15 +43,11 @@ class ViewController: UIViewController {
 extension ViewController: VNDocumentCameraViewControllerDelegate {
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-        
         let recognizedText = recognizeText(from: extractImages(from: scan))
         
-        print(recognizedText)
         self.textView.text = recognizedText
         
-        self.dismiss(animated: true) {
-            
-        }
+        dismiss(animated: true)
     }
     
     private func extractImages(from scan: VNDocumentCameraScan) -> [CGImage] {

@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scanned text placeholder" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xj9-e9-Yde">
-                                <rect key="frame" x="20" y="44" width="374" height="760"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scanned text will appear here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xj9-e9-Yde">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -26,10 +26,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-Lr-NCB">
                                 <rect key="frame" x="20" y="812" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HSZ-64-nsx"/>
+                                    <constraint firstAttribute="height" constant="50" id="RYY-2u-ivB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scan text">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="ScanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ur9-SN-gnm"/>
                                 </connections>
@@ -38,13 +40,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6gf-Lr-NCB" firstAttribute="top" secondItem="xj9-e9-Yde" secondAttribute="bottom" constant="8" symbolic="YES" id="37e-hQ-LRo"/>
-                            <constraint firstItem="6gf-Lr-NCB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6aP-hZ-h9H"/>
-                            <constraint firstItem="6gf-Lr-NCB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gd0-kf-Xb5"/>
-                            <constraint firstItem="xj9-e9-Yde" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wnb-86-whP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xj9-e9-Yde" secondAttribute="trailing" constant="20" id="d50-lB-TVg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6gf-Lr-NCB" secondAttribute="trailing" constant="20" id="rU9-F0-v0w"/>
-                            <constraint firstItem="xj9-e9-Yde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zlZ-09-haK"/>
+                            <constraint firstItem="xj9-e9-Yde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1YR-3Q-MwZ"/>
+                            <constraint firstItem="xj9-e9-Yde" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JAJ-o5-yhI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6gf-Lr-NCB" secondAttribute="trailing" constant="20" id="KtK-Xz-qp0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xj9-e9-Yde" secondAttribute="trailing" id="QSz-gy-wuD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6gf-Lr-NCB" secondAttribute="bottom" id="bbg-dV-d0M"/>
+                            <constraint firstItem="6gf-Lr-NCB" firstAttribute="top" secondItem="xj9-e9-Yde" secondAttribute="bottom" constant="20" id="dlV-Tc-3y9"/>
+                            <constraint firstItem="6gf-Lr-NCB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gkH-fa-5mN"/>
                         </constraints>
                     </view>
                     <connections>
